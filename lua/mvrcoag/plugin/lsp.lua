@@ -32,8 +32,11 @@ local servers = {
 	"gopls",
 	"eslint",
 	"intelephense",
-	"gopls",
 	"pyright",
+	"templ",
+	"htmx",
+	"html",
+	"tailwindcss",
 }
 
 require("mason-lspconfig").setup({
@@ -42,6 +45,20 @@ require("mason-lspconfig").setup({
 		function(server_name)
 			require("lspconfig")[server_name].setup({})
 		end,
+	},
+})
+
+require("lspconfig")["html"].setup({
+	filetypes = { "blade", "html" },
+})
+
+require("lspconfig")["pyright"].setup({
+	settings = {
+		python = {
+			analysis = {
+				typeCheckingMode = "off",
+			},
+		},
 	},
 })
 
