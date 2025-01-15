@@ -31,11 +31,8 @@ local servers = {
 	"vtsls",
 	"gopls",
 	"eslint",
-	"intelephense",
 	"pyright",
 	"templ",
-	"htmx",
-	"html",
 	"tailwindcss",
 }
 

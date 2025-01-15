@@ -6,7 +6,6 @@ require("formatter").setup({
 		typescriptreact = require("formatter.filetypes.javascript").prettier,
 		javascriptreact = require("formatter.filetypes.javascript").prettier,
 		html = require("formatter.filetypes.html").prettier,
-		php = require("formatter.filetypes.php").php_cs_fixer,
 		python = require("formatter.filetypes.python").black,
 		go = require("formatter.filetypes.go").gofmt,
 	},
