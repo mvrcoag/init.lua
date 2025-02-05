@@ -43,4 +43,13 @@ require("lazy").setup({
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"mhartington/formatter.nvim",
+	"nvim-lualine/lualine.nvim",
+	{
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
+	"windwp/nvim-autopairs",
+	"windwp/nvim-ts-autotag",
+	"github/copilot.vim",
 })
